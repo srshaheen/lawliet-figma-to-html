@@ -1,0 +1,207 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.playfair-display-bold {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.playfair-display-regular {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.plus-jakarta-sans-bold {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.plus-jakarta-sans-regular {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+:root {
+  --grey: #2d2f30;
+  --white: #ffffff;
+  --neutral: #f9f8f9;
+  --primary: #094b72;
+  --neutral-grey: #4f4f4f;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: var(--grey);
+}
+
+/* header start */
+header {
+  background-color: var(--white);
+}
+
+.header-area {
+  width: 80%;
+  height: 10rem;
+  margin-inline: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-area > * {
+  flex: 1;
+}
+
+.logo img {
+  width: 14.4rem;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  gap: 5.6rem;
+}
+
+nav a {
+  text-transform: uppercase;
+  letter-spacing: 0.15rem;
+  font-size: 1.2rem;
+}
+
+/* header end */
+/* Hero start */
+#hero {
+  background-color: var(--neutral);
+  padding-top: 6rem;
+}
+
+.hero-area {
+  height: 90vh;
+  width: 90%;
+  margin-inline: auto;
+  display: flex;
+}
+
+.hero-content h2 {
+  font-size: 6rem;
+  letter-spacing: 1.5%;
+  line-height: 8rem;
+  color: var(--primary);
+}
+
+.hero-content .desc {
+  font-size: 1.8rem;
+  color: var(--neutral-grey);
+  line-height: 3rem;
+  letter-spacing: 0.05rem;
+  padding: 1rem 0;
+}
+
+.hero-img {
+  height: 100%;
+  width: 100%;
+  background-image: url("./img/Hero.svg");
+  background-size: 100% 120%;
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+
+.hero-area a {
+  padding: 2rem 4rem;
+  background-color: var(--primary);
+  font-size: 1.2rem;
+  color: var(--neutral);
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  border-radius: 0.8rem;
+  display: block;
+  width: max-content;
+}
+
+.companies {
+  padding-top: 5rem;
+}
+
+.companies p {
+  font-size: 2rem;
+  color: #8b8c8c;
+  padding-bottom: 2rem;
+}
+
+.companies-logo {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+/* .hero-img img {
+  width: 100%;
+  object-fit: cover;
+} */
+
+/* Hero end */
+
+/* Service start */
+#service {
+  background-color: #f2fcff;
+}
+
+.services-area {
+  width: 80%;
+  margin-inline: auto;
+  display: flex;
+  padding: 6rem 0;
+}
+.service-left {
+  flex: 1;
+  padding-right: 5rem;
+}
+.service-left h3 {
+  font-size: 4rem;
+  color: #1e1e1e;
+  padding-right: 10rem;
+}
+
+.service-left p {
+  font-size: 2rem;
+  color: #8b8c8c;
+  padding-right: 10rem;
+}
+
+.service-right {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4rem;
+}
+
+/* Service end */
